@@ -12,9 +12,16 @@
 A concurrent program has multiple logical threads of control.  These threads may or may not run in parallel. 
 
 ## Concurrency vs Parallelism 
+- Concurrency is not Parallelism by Rob Pike https://www.youtube.com/watch?v=oV9rvDllKEg
+	<img src="https://img.youtube.com/vi/oV9rvDllKEg/0.jpg" alt="Concurrency is not Parallelism by Rob Pike" style="height: 500px; width:500px;"/>
+- 
 - Concurrency can use parallelism for getting its job done but remember parallelism is not the ultimate goal of concurrency.
 - Concurrency is when two or more tasks can start, run, and complete in overlapping time periods. It doesn't necessarily mean they'll ever both be running at the same instant. For example, multitasking on a single-core machine.
 - Parallelism is when tasks literally run at the same time, e.g., on a multicore processor.
+
+	<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uXfbq8xZ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ju47qnvgm7d832q5nfev.png" alt="Concurrency" style="height: 500px; width:500px;"/>
+
+- https://dev.to/harinathar/concurrency-and-channels-in-go-jh4
 
 ## OS Scheduler
 Every program you run creates a Process and each Process is given an initial Thread. Threads have the ability to create more Threads. 
@@ -57,6 +64,8 @@ func main() {
 ```
 
 ### Channels
+- https://www.youtube.com/watch?v=KBZlN0izeiY GopherCon 2017: Kavya Joshi - Understanding Channels
+	<img src="https://img.youtube.com/vi/KBZlN0izeiY/0.jpg" alt="Kavya Joshi - Understanding Channels" style="height: 500px; width:500px;"/>
 - Channels are the pipes that connect concurrent goroutines.
 - You can send values into channels from one goroutine and receive those values into another goroutine.
 - A channel in Go provides a connection between two goroutines, allowing them to communicate.
@@ -233,4 +242,7 @@ func main() {
 
 
 ### Go scheduler
+- GopherCon 2018: Kavya Joshi - The Scheduler Saga - https://www.youtube.com/watch?v=YHRO5WQGh0k
+	<img src="https://img.youtube.com/vi/YHRO5WQGh0k/0.jpg" alt="The Scheduler Saga " style="height: 500px; width:500px;"/>
+- https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html
 ### Concurrency patterns in Golang
