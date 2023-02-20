@@ -246,4 +246,6 @@ func main() {
 - GopherCon 2018: Kavya Joshi - The Scheduler Saga - https://www.youtube.com/watch?v=YHRO5WQGh0k
 	<img src="https://img.youtube.com/vi/YHRO5WQGh0k/0.jpg" alt="The Scheduler Saga " style="height: 500px; width:500px;"/>
 - https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html
+- ![image](https://user-images.githubusercontent.com/124967310/220011873-6debb254-4bde-44b1-9053-3e7ead1f0e20.png)
+
 ### Concurrency patterns in Golang
