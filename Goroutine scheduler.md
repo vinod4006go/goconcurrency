@@ -24,12 +24,16 @@ When a running thread needs to wait, it relinquishes the remainder of its time s
 ### 
 
 
-### go runtime
+## go runtime
 ![image](https://user-images.githubusercontent.com/124967310/220011873-6debb254-4bde-44b1-9053-3e7ead1f0e20.png)
 
 ### goscheduler
 
 - Why create a scheduler when the operating system can schedule threads for you?
+- Green Threads
+These Threads only exist in our programs in the user space and are invisible to the Kernel.
+The handling and scheduling of these Threads occurs in user space as well, depending on the Threading model. 
+
 #### Different Threading Models (https://yuriktech.com/2020/03/07/User-Space-Scheduling/#Threading-Models)
 >
 > ##### 1-1
