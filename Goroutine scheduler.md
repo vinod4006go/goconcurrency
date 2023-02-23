@@ -1,5 +1,31 @@
-> ### go runtime
->![image](https://user-images.githubusercontent.com/124967310/220011873-6debb254-4bde-44b1-9053-3e7ead1f0e20.png)
+## OS Scheduler
+The system scheduler controls multitasking by determining which of the competing threads receives the next processor time slice. 
+
+
+### Processes and Threads
+- A process, in the simplest terms, is an executing program. 
+- A thread is the basic unit to which the operating system allocates processor time. A thread can execute any part of the process code, including parts currently being executed by another thread.
+- Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution. Each process is started with a single thread, often called the primary thread, but can create additional threads from any of its threads.
+- The thread context includes the thread's set of machine registers, the kernel stack, a thread environment block, and a user stack in the address space of the thread's process. Threads can also have their own security context, which can be used for impersonating clients.
+- A thread pool is a collection of worker threads that efficiently execute asynchronous callbacks on behalf of the application. The thread pool is primarily used to reduce the number of application threads and provide management of the worker threads.
+
+### Context Switches
+The scheduler maintains a queue of executable threads for each priority level. These are known as ready threads. When a processor becomes available, the system performs a context switch. The steps in a context switch are:
+- Save the context of the thread that just finished executing.
+- Place the thread that just finished executing at the end of the queue for its priority.
+- Find the highest priority queue that contains ready threads.
+- Remove the thread at the head of the queue, load its context, and execute it.
+
+The most common reasons for a context switch are:
+- The time slice has elapsed.
+- A thread with a higher priority has become ready to run.
+- A running thread needs to wait.
+When a running thread needs to wait, it relinquishes the remainder of its time slice.
+### 
+
+
+### go runtime
+![image](https://user-images.githubusercontent.com/124967310/220011873-6debb254-4bde-44b1-9053-3e7ead1f0e20.png)
 
 ### goscheduler
 
