@@ -38,6 +38,7 @@ Go tries to get the best of both worlds by using a M:N scheduler. It schedules a
 - https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw
 - https://github.com/golang/go/blob/master/src/runtime/proc.go
 - https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html
+- https://speakerdeck.com/kavya719/the-scheduler-saga?slide=19
 
 #### Scheduler Tracing In Go
 https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html
