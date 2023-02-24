@@ -39,6 +39,12 @@ Go tries to get the best of both worlds by using a M:N scheduler. It schedules a
 - https://github.com/golang/go/blob/master/src/runtime/proc.go
 - https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html
 - https://speakerdeck.com/kavya719/the-scheduler-saga?slide=19
+#### goals
+for scheduling goroutines onto kernel threads.
+- use a small number of kernel threads. kernel threads are expensive to create.
+- support high concurrency. Go programs should be able to run lots and lots of goroutines.
+- leverage parallelism i.e. scale to N cores.
+- On an N-core machine, Go programs should be able to run N goroutines in parallel.
 
 #### Scheduler Tracing In Go
 https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html
