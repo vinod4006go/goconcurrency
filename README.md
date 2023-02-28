@@ -4,7 +4,7 @@
 
 - [goroutines](#goroutines)
 - [channels](#channels)
-- [goscheduler](Goroutine scheduler)
+- [goscheduler](#goscheduler)
 ## Concurrency
 - Concurrency is about to handle numerous tasks at once.
 - Aspect of the problem domain — where your program needs to handle numerous simultaneous events.
@@ -249,7 +249,7 @@ func main() {
 
 
 
-# Goroutine scheduler
+# Scheduling
 
 
 ## OS Scheduler
