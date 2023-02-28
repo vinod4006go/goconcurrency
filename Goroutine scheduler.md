@@ -1,3 +1,7 @@
+
+# Goroutine scheduler
+
+
 ## OS Scheduler
 The system scheduler controls multitasking by determining which of the competing threads receives the next processor time slice. 
 
@@ -39,6 +43,7 @@ Go tries to get the best of both worlds by using a M:N scheduler. It schedules a
 - https://github.com/golang/go/blob/master/src/runtime/proc.go
 - https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html
 - https://speakerdeck.com/kavya719/the-scheduler-saga?slide=19
+- https://appliedgo.net/concurrencyslower/
 #### goals
 for scheduling goroutines onto kernel threads.
 - use a small number of kernel threads. kernel threads are expensive to create.
@@ -51,4 +56,5 @@ https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html
 
 #### GopherCon 2018: Kavya Joshi - The Scheduler Saga - https://www.youtube.com/watch?v=YHRO5WQGh0k
   <img src="https://img.youtube.com/vi/YHRO5WQGh0k/0.jpg" alt="The Scheduler Saga " style="height: 500px; width:500px;"/>
+
 
