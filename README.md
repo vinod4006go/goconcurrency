@@ -2,7 +2,7 @@
 
 - [goroutines](#goroutines)
 - [channels](#channels)
-- [goscheduler](#goscheduler)
+- [goscheduler](https://github.com/vinod4006go/goconcurrency/blob/b28155fc9cb5b533be86de9675a1b5babbd76b9c/Goroutine%20scheduler.md)
 ## Concurrency
 - Concurrency is about to handle numerous tasks at once.
 - Aspect of the problem domain — where your program needs to handle numerous simultaneous events.
