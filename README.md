@@ -1,3 +1,5 @@
+![image](https://www.yakuter.com/wp-content/yuklemeler/1_mdkQasa9ipcJZrSGajSU1A.jpeg)
+
 # Golang Concurrency
 
 - [goroutines](#goroutines)
