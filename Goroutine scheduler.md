@@ -4,9 +4,10 @@
 
 ## OS Scheduler
 The system scheduler controls multitasking by determining which of the competing threads receives the next processor time slice. 
-
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Concepts-_Program_vs._Process_vs._Thread.jpg/800px-Concepts-_Program_vs._Process_vs._Thread.jpg)
 
 ### Processes and Threads
+
 - A process, in the simplest terms, is an executing program. 
 - A thread is the basic unit to which the operating system allocates processor time. A thread can execute any part of the process code, including parts currently being executed by another thread.
 - Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution. Each process is started with a single thread, often called the primary thread, but can create additional threads from any of its threads.
