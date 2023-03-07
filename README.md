@@ -301,9 +301,11 @@ for scheduling goroutines onto kernel threads.
 - support high concurrency. Go programs should be able to run lots and lots of goroutines.
 - leverage parallelism i.e. scale to N cores.
 - On an N-core machine, Go programs should be able to run N goroutines in parallel.
+![image](https://cdn.jsdelivr.net/gh/b0xt/sobyte-images/2022/04/11/9dc2e8468e7a497ca34d609323eeb38c.png)
 
 #### Scheduler Tracing In Go
 https://www.ardanlabs.com/blog/2015/02/scheduler-tracing-in-go.html
+
 
 #### GopherCon 2018: Kavya Joshi - The Scheduler Saga - https://www.youtube.com/watch?v=YHRO5WQGh0k
   <img src="https://img.youtube.com/vi/YHRO5WQGh0k/0.jpg" alt="The Scheduler Saga " style="height: 500px; width:500px;"/>
